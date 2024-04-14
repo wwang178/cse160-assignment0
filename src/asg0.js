@@ -2,6 +2,7 @@ var canvasCenterX = 200;
 var canvasCenterY = 200;
 
 var canvas;
+var gl;
 var ctx;
 
 var v1Color = "red"
@@ -115,6 +116,7 @@ function areaTriangle(v1, v2){
 }
 
 function drawCanvasBackground(){
-    ctx.fillStyle = "black"
-    ctx.fillRect(0, 0, 400, 400);
+    //ctx.fillStyle = "black"
+    //ctx.fillRect(0, 0, 400, 400);
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
 }
